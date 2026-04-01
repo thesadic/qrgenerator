@@ -1,0 +1,6 @@
+# ejecutar /Users/esadi/anaconda3/envs/qrgenerator/bin/pip install -r requirements.txt
+
+# requirements.txt
+qrcode
+Pillow
+
