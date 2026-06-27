@@ -1,0 +1,34 @@
+---
+description: Convenciones Python para qrgenerator.py
+globs: "**/*.py"
+alwaysApply: false
+---
+
+# Python — QR Generator
+
+## Dependencias
+
+Solo `qrcode` y `Pillow`. No añadir dependencias sin necesidad clara.
+
+## Generación QR con logo
+
+```python
+# ✅ Corrección alta obligatoria con logo superpuesto
+error_correction=qrcode.constants.ERROR_CORRECT_H
+
+# ✅ Logo ~20–25% del QR, centrado, respetar transparencia RGBA
+logo_max_size = qr_width // 4
+mask = logo.split()[3] if logo.mode == 'RGBA' else None
+```
+
+## CLI
+
+- Args: `sys.argv[1]` URL, `sys.argv[2]` logo opcional
+- Modo interactivo solo si no hay args
+- Validar URL no vacía antes de generar
+
+## Estilo
+
+- Docstrings en español para funciones públicas
+- `print` con prefijos de nivel, no logging framework
+- Manejar errores en `generate_qr_pro` con try/except y mensaje claro

@@ -1,0 +1,15 @@
+---
+description: Contexto general del proyecto QR Generator
+alwaysApply: true
+---
+
+# QR Generator
+
+Proyecto Python mínimo: CLI que genera QR con logo opcional.
+
+- Entorno Conda recomendado (`qrgenerator`); ver comentario en `requirements.txt`
+- Un solo módulo principal: `qrgenerator.py`
+- Mensajes al usuario en español (`[INFO]`, `[WARN]`, `[SUCCESS]`, `[ERROR]`)
+- PNG de salida ignorados por git; no commitear artefactos generados
+
+Al proponer cambios, mantener el alcance pequeño y el estilo del script existente.

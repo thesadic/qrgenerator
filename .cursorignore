@@ -1,0 +1,9 @@
+# Artefactos generados
+*.png
+
+# Python / entornos
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
