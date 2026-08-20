@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Guía de contribución
+    url: https://github.com/thesadic/qrgenerator/blob/main/CONTRIBUTING.md
+    about: Cómo reportar bugs, proponer features y abrir un pull request.
+  - name: Código de conducta
+    url: https://github.com/thesadic/qrgenerator/blob/main/CODE_OF_CONDUCT.md
+    about: Normas de la comunidad antes de participar.
