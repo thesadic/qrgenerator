@@ -1,5 +1,11 @@
-# Ignorar imágenes PNG generadas
+# Ignorar imágenes (QR generados, logos locales, etc.)
 *.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.bmp
+*.ico
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

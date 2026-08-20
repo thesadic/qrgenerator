@@ -1,5 +1,7 @@
 # QR Generator
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 CLI en Python para generar códigos QR estáticos con logo opcional en el centro. Útil para enlaces web, tarjetas o material impreso con branding.
 
 ## Requisitos
@@ -65,7 +67,7 @@ El script pedirá la URL y, opcionalmente, la ruta del logo.
 python qrgenerator.py "https://ejemplo.com"
 
 # URL + logo
-python qrgenerator.py "https://ejemplo.com" consultorioscanelones.jpeg
+python qrgenerator.py "https://ejemplo.com" logo.png
 ```
 
 ### Desde Python
@@ -80,7 +82,7 @@ generate_qr_pro("https://ejemplo.com", filename="mi_qr.png", logo_path="logo.png
 ## Salida
 
 - Por defecto guarda `qrcode_pro.png` en el directorio actual.
-- Los archivos `.png` generados están en `.gitignore` y no se versionan.
+- Los archivos de imagen generados están en `.gitignore` y no se versionan.
 
 ## Logo central
 
@@ -95,11 +97,11 @@ Si la ruta del logo no existe, se genera un QR estándar y se muestra un aviso `
 
 ```
 qrgenerator/
-├── qrgenerator.py          # Script principal
-├── requirements.txt        # Dependencias
-├── consultorioscanelones.jpeg  # Logo de ejemplo
-├── AGENTS.md                 # Contexto para agentes de IA
-└── .cursor/rules/            # Reglas de Cursor
+├── qrgenerator.py   # Script principal
+├── requirements.txt # Dependencias
+├── LICENSE          # MIT
+├── AGENTS.md        # Contexto para agentes de IA
+└── .cursor/rules/   # Reglas de Cursor
 ```
 
 ## Mensajes de consola
@@ -113,4 +115,4 @@ qrgenerator/
 
 ## Licencia
 
-Consultar el repositorio en GitHub: [thesadic/qrgenerator](https://github.com/thesadic/qrgenerator).
+Este proyecto se distribuye bajo la licencia [MIT](LICENSE).

@@ -2,7 +2,7 @@
 
 ## Propósito
 
-Script CLI en Python que genera códigos QR estáticos con logo opcional en el centro. Pensado para uso local (branding de consultorios, enlaces, etc.).
+Script CLI en Python que genera códigos QR estáticos con logo opcional en el centro. Pensado para uso local (enlaces, branding, material impreso, etc.).
 
 ## Stack
 
@@ -15,7 +15,7 @@ Script CLI en Python que genera códigos QR estáticos con logo opcional en el c
 ```bash
 # Con entorno activo
 python qrgenerator.py "https://ejemplo.com"
-python qrgenerator.py "https://ejemplo.com" consultorioscanelones.jpeg
+python qrgenerator.py "https://ejemplo.com" logo.png
 ```
 
 Dependencias: `pip install -r requirements.txt`
@@ -31,7 +31,7 @@ Dependencias: `pip install -r requirements.txt`
 ## Qué evitar
 
 - No cambiar la corrección de errores a un nivel bajo si se usa logo
-- No commitear PNG generados ni el entorno Conda
+- No commitear imágenes generadas ni el entorno Conda
 - Mantener el script como CLI simple; no añadir frameworks web sin que se pida
 
 ## Archivos clave
@@ -40,4 +40,4 @@ Dependencias: `pip install -r requirements.txt`
 |---------|-----|
 | `qrgenerator.py` | Lógica de generación |
 | `requirements.txt` | Dependencias |
-| `consultorioscanelones.jpeg` | Logo de ejemplo (asset del repo) |
+| `LICENSE` | Licencia MIT |
